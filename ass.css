@@ -1,0 +1,10 @@
+.container{
+    margin-top: 10%;
+    margin-left: 30%;
+    border: rgb(211, 211, 155) double 5px; 
+    width: 40%;
+    background-color: rgb(99, 227, 123);
+}
+.container button{
+    margin-top: 10px;
+}

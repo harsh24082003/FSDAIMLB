@@ -1,0 +1,114 @@
+body{
+    background-color: bisque;
+}
+.container{
+    display: grid;
+    height: 600px;
+    width: 100%;
+    background-color: cadetblue;
+    border: 1px solid red ;
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-columns: 200px 300px auto auto; */
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.row1,.row2,.row3,.row4{
+    border: 1px solid greenyellow;
+}
+
+.row1{
+    /* grid-column-start: 5;
+    grid-column-end:7; */
+    grid-column: 1/13;
+    /* grid-row-start: 4;
+    grid-row-end: 5; */
+    grid-row: 1/2;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.row2{
+    grid-column: 1/13;
+    grid-row: 2/3;
+    background-color:#232f3e ;
+    height: 70px;
+    display: flex;
+    border: 1px solid white;
+}
+.row3{
+    grid-column: 1/13;
+    grid-row: 3/4;
+}
+
+.row4{
+    grid-column: 1/13;
+    grid-row: 4/5;
+    background-color: burlywood;
+    display: flex;
+    border: 2px solid rgb(221, 177, 120);
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul li{
+    display: inline;
+    list-style: none;
+    padding: 20px;
+}
+li:hover{
+    background-color: cadetblue;
+}
+
+.row41,.row42,.row43,.row44{
+    width: 260px;
+    height:300px;
+    border: 1px solid red;
+
+}
+.row41{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.row411{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: normal;
+    padding-left: 10px;
+}
+.row412{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: normal;
+}
+.row413{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: normal;
+    padding-left: 10px;
+}
+.row414{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: normal;
+}
+/* .row411 img{
+    margin: 9px 3px 3px 20px;
+    
+}
+.row412{
+    margin: 28px 3px 20px 3px ;
+}
+.row413{
+    margin: 9px 3px 3px 20px;
+}
+.row414{
+    margin: 9px 3px 20px 3px;
+} */
